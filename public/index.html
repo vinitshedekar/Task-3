@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Twitter</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<script src="https://cdn.tailwindcss.com"></script>-->
+
+  <script>
+    function closeForm() {
+        window.close();
+    }
+
+  </script>
+
+  <style>
+    .placeholder-transition {
+      position: absolute;
+      top: 50%;
+      left: 75px;
+      transform: translateY(-50%);
+      transition: top 0.3s, font-size 0.3s, color 0.3s;
+      pointer-events: none;
+      color: #646364;
+    }
+
+    .input:focus + .placeholder-transition,
+    .input:not(:placeholder-shown) + .placeholder-transition {
+      top: 20px;
+      font-size: 15px;
+      color: #3490DC;
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-800 h-screen">
+
+  <div class="bg-black p-8 rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " style="height: 90vh; width: 85vh;">
+    
+    <div class="flex">
+        <button class="text-3xl left-5 top-2 absolute text-white" onclick="closeForm()">x</button>
+        <h1 class="text-2xl font-bold text-white left-20 top-3 absolute">Step 1 of 5</h1>
+    </div>
+    
+    <h1 class="mt-14 ml-16 text-4xl font-bold text-white ">Create your account</h1>
+
+    <!-- Name Input -->
+    <div class="mt-10 relative">
+      <input type="name" id="name" name="name" class="transition input mt-1 mx-16 px-2 pt-5 w-4/5 border border-gray-500 rounded-md bg-black focus:outline-none focus:ring-2 focus:border-blue-500 text-white font-bold text-xl" placeholder="" style="height: 72px;">
+      <label for="name" class="placeholder-transition text-gray-500 text-xl">Name</label>
+    </div>
+
+    <!-- Email Input -->
+    <div class="mt-7 relative">
+      <input type="email" id="email" name="email" class="transition input mt-1 mx-16 px-2 pt-5 w-4/5 border border-gray-500 rounded-md bg-black focus:outline-none focus:ring-2 focus:border-blue-500 text-white font-bold text-xl" placeholder="" style="height: 72px;">
+      <label for="email" class="placeholder-transition text-gray-500 text-xl">Email</label>
+    </div>
+
+    <p class="text-right mt-4 mr-20"><a href="" class="text-xl text-blue-600 hover:underline ">Use phone instead</a></p>
+
+    <div >
+      <h2 class="mt-5 mx-16 text-xl font-bold text-white ">Date of Birth</h2>
+      <p class="mt-2 mx-16 text-gray-600 text-lg leading-5">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+    </div>
+    
+    
+    <!-- Date of Birth Inputs -->
+    <div class="flex mt-4">
+
+      <!-- Month -->
+      <div style="flex: 4">
+        <select id="dob-month" name="dob-month" class="mt-1 ml-16 pl-1 pb-9 w-64 rounded-md bg-black text-gray-500 border border-gray-500 focus:ring-2 focus:border-blue-500" style="height: 72px;">
+          <option class="text-black" value="" disabled selected>Month</option>
+          <option class="text-white" value="01">January</option>
+          <option class="text-white" value="02">February</option>
+          <option class="text-white" value="01">March</option>
+          <option class="text-white" value="01">April</option>
+          <option class="text-white" value="01">May</option>
+          <option class="text-white" value="01">June</option>
+          <option class="text-white" value="01">July</option>
+          <option class="text-white" value="01">August</option>
+          <option class="text-white" value="01">September</option>
+          <option class="text-white" value="01">October</option>
+          <option class="text-white" value="01">November</option>
+          <option class="text-white" value="01">December</option>
+        </select>
+      </div>
+
+
+      <!-- Day -->
+      <div style="flex: 2">
+        <select id="dob-day" name="dob-day" class="mt-1 ml-4 pl-1 pb-9 w-28  rounded-md bg-black  text-gray-500 border border-gray-500 focus:ring-2 focus:border-blue-500" style="height: 72px;">
+            <option class="text-black" value="" disabled selected>Day</option>
+            <option class="text-white" value="01">1</option>
+            <option class="text-white" value="02">2</option>
+            <option class="text-white" value="01">3</option>
+            <option class="text-white" value="01">4</option>
+            <option class="text-white" value="01">5</option>
+            <option class="text-white" value="01">6</option>
+            <option class="text-white" value="01">7</option>
+            <option class="text-white" value="01">8</option>
+            <option class="text-white" value="01">9</option>
+            <option class="text-white" value="01">10</option>
+            <option class="text-white" value="01">11</option>
+            <option class="text-white" value="01">12</option>
+            <option class="text-white" value="01">13</option>
+            <option class="text-white" value="02">14</option>
+            <option class="text-white" value="01">15</option>
+            <option class="text-white" value="01">16</option>
+            <option class="text-white" value="01">17</option>
+            <option class="text-white" value="01">18</option>
+            <option class="text-white" value="01">19</option>
+            <option class="text-white" value="01">20</option>
+            <option class="text-white" value="01">21</option>
+            <option class="text-white" value="01">22</option>
+            <option class="text-white" value="01">23</option>
+            <option class="text-white" value="01">24</option>
+            <option class="text-white" value="01">25</option>
+            <option class="text-white" value="02">26</option>
+            <option class="text-white" value="01">27</option>
+            <option class="text-white" value="01">28</option>
+            <option class="text-white" value="01">29</option>
+            <option class="text-white" value="01">30</option>
+            <option class="text-white" value="01">31</option>
+        </select>
+      </div>
+
+
+      <!-- Year -->
+      <div style="flex: 3">
+        <select class="mt-1 ml-1 mr-20 pl-1 pb-9 w-36 rounded-md bg-black  text-gray-500 border border-gray-500 focus:ring-2 focus:border-blue-500" style="height: 72px;">
+            <option class="text-black" value="" disabled selected>Year</option>
+            <option class="text-white" value="01">2023</option>
+            <option class="text-white" value="02">2022</option>
+            <option class="text-white" value="01">2021</option>
+            <option class="text-white" value="01">2020</option>
+            <option class="text-white" value="01">2019</option>
+            <option class="text-white" value="01">2018</option>
+            <option class="text-white" value="01">2017</option>
+            <option class="text-white" value="01">2016</option>
+            <option class="text-white" value="01">2015</option>
+            <option class="text-white" value="01">2014</option>
+            <option class="text-white" value="01">2013</option>
+            <option class="text-white" value="01">2012</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!--Next button-->
+    <button class="px-64 h-16 rounded-full bg-gray-400 text-gray-900 font-bold text-xl absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">Next</button>
+
+
+  </div>
+
+</body>
+</html>
